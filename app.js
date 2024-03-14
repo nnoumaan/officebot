@@ -2,11 +2,10 @@ const express = require("express");
 const BotCategory = require("./botSchema");
 const dotenv = require("dotenv");
 const cors = require("cors");
-const sendMail = require("./SendMail");
+const sendMail = require("./sendMail.js");
 const searchQuery = require("./searchQuery");
 dotenv.config({ path: "./config.env" });
 const app = express();
-
 
 // Middlewares
 
