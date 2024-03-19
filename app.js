@@ -4,6 +4,8 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const sendMail = require("./sendMail.js");
 const searchQuery = require("./searchQuery");
+const uploadCategory = require("./uploadCategory.js");
+const uploadFaq = require("./uploadFaq.js");
 dotenv.config({ path: "./config.env" });
 const app = express();
 
@@ -28,5 +30,8 @@ app.get("/getsubcategory", async (req, res) => {
 app.post("/email", sendMail);
 
 app.post("/searchQuery", searchQuery);
+
+app.post("/uploadCategory",uploadCategory)
+app.post("/uploadFaq",uploadFaq)
 
 module.exports = app;
