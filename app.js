@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const sendMail = require("./sendMail.js");
 const searchQuery = require("./searchQuery");
-const uploadCategory = require("./uploadCategory.js");
+const uploadCategory = require("./uploadCategory");
 const uploadFaq = require("./uploadFaq.js");
 dotenv.config({ path: "./config.env" });
 const app = express();
