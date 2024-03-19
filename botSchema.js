@@ -1,18 +1,15 @@
-
 const mongoose = require("mongoose");
 
-
 const botSubCategory = new mongoose.Schema({
-    policy_ID: {
-      type: String,
-    },
-  
-    category_Name: {
-      type: String,
-    },
-  });
-  
-  const BotCategory = mongoose.model("categories", botSubCategory);
+  policy_ID: {
+    type: String,
+  },
 
-  module.exports = BotCategory
-  
+  category_Name: {
+    type: String,
+  },
+});
+
+const BotCategory = mongoose.model("categories", botSubCategory);
+
+module.exports = BotCategory;

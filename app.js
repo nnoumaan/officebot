@@ -31,7 +31,7 @@ app.post("/email", sendMail);
 
 app.post("/searchQuery", searchQuery);
 
-app.post("/uploadCategory",uploadCategory)
-app.post("/uploadFaq",uploadFaq)
+app.post("/uploadCategory", uploadCategory);
+app.post("/uploadFaq", uploadFaq);
 
 module.exports = app;
